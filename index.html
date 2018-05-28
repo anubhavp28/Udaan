@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
     <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css" />
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
@@ -11,14 +12,27 @@
         <script>
             $(document).ready(function() {
 	            $('#fullpage').fullpage({
-                    sectionsColor : ["#ecf0f1","white","#ecf0f1","white"],
+                    sectionsColor : ["#ecf0f1","#ffffff","#ecf0f1","#ffffff","#ecf0f1"],
                     menu: '#menu',  
                     lockAnchors: false,  
-                    anchors:['home', 'about','events','contact-us'],  
+                    anchors:['home', 'about','events','members','contact-us'],
+                    responsiveWidth: 1000,
+                    paddingTop: 80,
+                    paddingBottom: 40,
                 });
+              
+              $('#mobile-menu-btn').click(function () {
+                $('#mobile-menu').toggle();
+              });
+             
+              $('#mobile-menu a').click(function () {
+                $('#mobile-menu').hide();
+              });
+              
             });
         </script>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,600,700" rel="stylesheet">
     </head>
@@ -30,38 +44,44 @@
                     <a href="#home">Home</a>
                     <a href="#about">About Us</a>
                     <a href="#events">Events</a>
+                    <a href="#members">Members</a>
                     <a href="#contact-us">Contact Us</a>
                 </div>
+                <a id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </a>
             </div>
+        </div>
+        <div id="mobile-menu">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#events">Events</a>
+            <a href="#members">Members</a>
+            <a href="#contact-us">Contact Us</a>
         </div>
         <div id="fullpage">
             <div class="section">
                 <div class="two-col-div">
-                    <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-content:center;">
-                        <div class="udaan-logo" style="background-color: white;border-radius:5px; padding: 10px 10px; width:fit-content; margin:auto;
-                        -webkit-box-shadow: 17px 12px 49px -12px rgba(179,179,179,0.87);
-                        -moz-box-shadow: 17px 12px 49px -12px rgba(179,179,179,0.87);
-                        box-shadow: 17px 12px 49px -12px rgba(179,179,179,0.87);">
-                            <div style="font-family: 'Permanent Marker', cursive;background: -webkit-linear-gradient(to left, #000000, #434343);
-                            background: linear-gradient(to left, #000000, #434343);color:white;margin:0px auto;width:fit-content;font-size:70px;padding:5px 50px 8px 50px;
-
-                            border: 1px solid black;border-radius:5px;
-                            ">
+                    <div id="home-col-1">
+                        <div id="udaan-logo">
+                            <div id="udaan-logo-black-badge">
                                 Udaan
                             </div>
-                            <div style="margin:9px auto 0px auto;;font-family: 'Roboto';color:rgb(150,150,150);width:fit-content;letter-spacing:0.42em;font-size:12px;">
+                            <div id="udaan-log-subscript">
                                 <span style="font-size:0.2em">&nbsp;</span>IIIT KALYANI'S LITERARY CLUB
                             </div>
                         </div>
                     </div>
-                    <div style="flex:1;font-family: 'Roboto', Arial;font-size:18px;line-height:2em;color:rgb(50,50,50);\\border:solid 1px black;">
-                        <b><span style="font-size: 20px">Have a knack for languages and literature?</span></b><br> For those of you who feel that books are a 
-                        natural extension of yourself, Udaan Club is the place to be! We are a group of zealous
-                        students who never get tired of talking about poetry, literature, and language. Get 
-                        ready to play with words and sentences, read between the lines, delve deep into the 
-                        intricacies of language, while having fun discussions and quizzes over your favorite books!
+                    <div id="home-col-2">
+                        <b><span style="font-size: 20px">Have a knack for languages and literature?</span></b>
+                        <br>
+                        For those of you who feel that books are a natural extension of yourself, Udaan
+                        Club is the place to be! We are a group of zealous students who never get tired of 
+                        talking about poetry, literature, and language. Get ready to play with words and
+                        sentences, read between the lines, delve deep into the intricacies of language, 
+                        while having fun discussions and quizzes over your favorite books!
                         <br><br>
-                        <a href="#" style="text-decoration:none;color:black;display:block;border: 1.5px solid black;background-color:transparent;width:fit-content;padding:2px 20px;border-radius:30px;font-size:15px;">
+                        <a href="#" class="button">
                             More about Udaan&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -77,22 +97,15 @@
                     of creativity. For contributing your own works and getting featured on the page please send your entries to our facebook 
                     inbox or email us.
                     <br><br>
-                    <a href="#" clas="button">
-                        More about Udaan&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i>
-                    </a>
                 </div>
-            </div>
+          </div>
 	        <div class="section">
                 <div class="slide">
-                    <div class="image-enclosure" style="margin:auto;background-color:white;border-radius:10px;width:800px;
-                    padding:15px;font-family:'Roboto';font-size:14px;
-                    -webkit-box-shadow: 17px 12px 49px -12px rgba(179,179,179,0.87);
-                    -moz-box-shadow: 17px 12px 49px -12px rgba(179,179,179,0.87);
-                    box-shadow: 17px 12px 49px -12px rgba(179,179,179,0.87);
-                    ">
+                    <div class="event-enclosure">
                         <img src="pic1.jpg" width="100%">
                         <p><b>Gupshup</b><br>Hosted by Pulkit Mishra was a mix of emotional and casual talks. 
-                        Interest of audience in topics ranging from intricacies of a woman to anime and from literature-enthusiasts to Robert Frost's deep works was commendable.
+                        Interest of audience in topics ranging from intricacies of a woman to anime and from literature-enthusiasts to
+                        Robert Frost's deep works was commendable.
                         Looking forward to more conversations that can ease down your stage-fright.</p>
                     </div>
                 </div>
@@ -100,11 +113,46 @@
 	            <div class="slide"> Slide 3 </div>
 	            <div class="slide"> Slide 4 </div>
             </div>
+          <div class="section">
+                <div class="single-col-div">
+                    <b><span class="title">Members</span></b>
+                    <br><br> 
+                    <div class="member-enclosure">
+                      <img style="border-radius:10px;" src="https://vignette.wikia.nocookie.net/disney-infinity/images/2/2b/Phineas_from_%22Phineas_and_Ferb.png/revision/latest?cb=20140621131632" width="100%">
+                      <br>
+                      <b><span>President</span></b><br>
+                      Anubhav Patel
+                      <br>
+                    </div>
+                    <div class="member-enclosure">
+                      <img style="border-radius:10px;" src="https://vignette.wikia.nocookie.net/disney-infinity/images/2/2b/Phineas_from_%22Phineas_and_Ferb.png/revision/latest?cb=20140621131632" width="100%">
+                      <br>
+                      <b><span>Vice President</span></b><br>
+                      Anubhav Patel
+                      <br>
+                    </div>
+                    <div class="member-enclosure">
+                      <img style="border-radius:10px;" src="https://vignette.wikia.nocookie.net/disney-infinity/images/2/2b/Phineas_from_%22Phineas_and_Ferb.png/revision/latest?cb=20140621131632" width="100%">
+                      <br>
+                      <b><span>Billionaire CEO</span></b><br>
+                      Anubhav Patel
+                      <br>
+                    </div>
+                    <div class="member-enclosure">
+                      <img style="border-radius:10px;" src="https://vignette.wikia.nocookie.net/disney-infinity/images/2/2b/Phineas_from_%22Phineas_and_Ferb.png/revision/latest?cb=20140621131632" width="100%">
+                      <br>
+                      <b><span>Creative Head</span></b><br>
+                      Anubhav Patel
+                      <br>
+                    </div>
+                    <br><br>
+                </div>
+          </div>
 	        <div class="section">
                 <div class="single-col-div">
                     <b><span class="title">Contact Us</span></b><br><br>
                     Indian Institute of Information Technology Kalyani, Webel IT Park,<br>
-                    (Near Buddha Park), Kalyani – 741235. Nadia, West Bengal.
+                    (Near Buddha Park), Kalyani - 741235. Nadia, West Bengal.
                     <br><br>
                     <b>Email</b> : udaan@iiitkalyani.ac.in
                     <br>
