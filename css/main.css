@@ -1,0 +1,526 @@
+
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(240, 240, 240);
+  background-color: rgba(200,200,200,0.5);
+	background-image : url('../img/back.png');
+	background-repeat: repeat;
+	background-size: 550px 550px;
+	background: linear-gradient(0deg,#ebedee  0%, #fdfbfb 50%, #ebedee 100%);
+	font-family: 'Poppins', sans-serif;
+}
+
+.hsmall {
+	font-family : "Istok Web", "Poppins", sans-serif;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+	padding:0px;
+	margin: 0px;
+}
+
+.hlarge {
+	font-family : "Istok Web", "Poppins", sans-serif;
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+	padding:0px;
+	margin: 0px;
+}
+
+.section {
+	position: relative;
+	padding: 50px 0px 50px 190px ;
+	margin: 0px;
+	box-sizing: border-box;
+	min-height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.logo {
+  box-sizing: border-box;
+  padding: 25px 25px 35px 10px;
+  width: 100%;
+  height: 200px;
+}
+
+.udaan-pen {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  padding-bottom:5px;
+}
+
+.udaan-text::before {
+  display: block;
+  content: 'UDAAN';
+  font-family: 'Permanent Marker';
+  font-size: 26px;
+  text-align: center;
+}
+
+#sidebar {
+  user-select: none;
+  position: fixed;
+  top: 0px;
+  height: 100%;
+  width: 190px;
+  background-color: rgb(20, 20, 20);
+  -webkit-box-shadow: 10px 0px 23px -8px rgba(196, 196, 196, 0.81);
+  -moz-box-shadow: 10px 0px 23px -8px rgba(196, 196, 196, 0.81);
+  box-shadow: 10px 0px 23px -8px rgba(196, 196, 196, 0.81);
+  color: rgb(240, 240, 240);
+  z-index:2;
+}
+
+.menu-container {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  height: calc(100% - 400px);
+}
+
+.menu {
+	font-size: 14px;
+	position: relative;
+	list-style-type: none;
+	padding: 0px;
+}
+
+.menu::before {
+	position: absolute;
+	content: '';
+	display: block;
+	background-color: rgb(50,50,50);
+	width: 2px;
+	left : 40px;
+	height: 100%;
+}
+
+.menu li {
+	width: 100%;
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 20px 33px;
+  color: rgb(100, 100, 100);
+  transition: 0.2s ease-out;
+}
+
+.menu li:first-of-type {
+	padding-top: 0px;
+}
+
+.menu li:last-of-type {
+	padding-bottom: 0px;
+}
+
+.menu li::before {
+	position: relative;
+	z-index: 1;
+	box-sizing: border-box;
+	content: '';
+	display: block;
+	height: 16px;
+	width: 16px;
+	border: 3px solid rgb(50,50,50);
+	background-color: rgb(20, 20, 20);
+	border-radius: 50%;
+	margin-right: 10px;
+  transition: 0.2s ease-out;
+}
+
+.menu li.active::before{
+  border: 3px solid white;
+}
+
+.menu li::after{
+  content: '';
+  position: absolute;
+  display:block;
+  background-color: #2980b9;
+  border-radius: 5px;
+  width: 20px;
+  height: 7px;
+  right: -20px;
+  transition: 0.2s ease-out;
+  opacity: 0;
+}
+
+.menu li.active::after{
+  opacity: 1;
+}
+
+.menu li a{
+	display: block;
+	line-height: 16px;
+}
+
+.menu li.active {
+  color: white;
+}
+
+.sidebar-scrollDown {
+  position:absolute;
+  bottom:0px;
+  height: 100px;
+  width:100%;
+  text-align:center;
+}
+
+.sidebar-scrollDown > img {
+  width:18px;
+}
+
+/* Home Section CSS */
+/* ---------------- */
+#home {
+  position: relative;
+	background-image: url('../img/back.png');
+	background-size: 450px 450px;
+	background-repeat: repeat;
+}
+
+#banner {
+  position: relative;
+  z-index: 1;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box; 
+}
+
+#banner img {
+  display:block;
+  width: 40%;
+  height:auto;
+  margin:auto;
+  -webkit-box-shadow: 17px 12px 49px -12px rgba(179,179,179,0.87);
+  -moz-box-shadow: 17px 12px 49px -12px rgba(179,179,179,0.87);
+  box-shadow: 17px 12px 49px -12px rgba(179,179,179,0.87);
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+
+#tagline {
+  position: relative;
+  z-index:1;
+  height:50%;
+  box-sizing:border-box;
+  margin: auto;
+  font-size:20px;
+  width:80%;
+  text-align:center;
+}
+
+#tagline .quote {
+  display:inline-block;
+  padding: 0.5em 1em;
+  font-size:30px;
+  color: rgb(20, 20, 20);
+  background-color: rgba(230,230,230,0.8);
+  border-radius: 15px;
+  height: 75px;
+  box-sizing: border-box;
+}
+
+#tagline .scrollDown {
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  position:absolute;
+  bottom:0px;
+  top:75px;
+}
+
+#home .background {
+  display:block;
+  position:absolute;
+  height:100%;
+  opacity: 0.6;
+}
+
+#home .background.art {
+  left:190px;
+  top:30px;
+}
+
+#home .background.science {
+  right:0px;
+  top:0px;
+}
+/* ---------------- */
+
+/* About Section CSS */
+/* ----------------- */
+#about .row {
+  display:flex;
+  flex-direction: row;
+}
+
+#about .numbering {
+  position: relative;
+}
+
+#about .numbering .number {
+  font-size:40px;
+  color:grey;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  position:absolute;
+  top:0px;
+  width:100%;
+  height:100%;
+  left:0px;
+}
+
+#about .numbering svg {
+  width:75px;
+  height:75px;
+}
+
+.num1-container {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:35%;
+  box-sizing: border-box;
+}
+
+#about .objective {
+  position:relative;
+  width:65%;
+  padding:120px 30px;
+  margin:80px 0px 20px auto;
+  font-size:20px;
+  border: 1px solid rgb(20,20,20);
+  border-radius:15px 0px 0px 15px;
+	background-image: url('../img/oback.jpg');
+  color:white;
+  background-size: cover;
+}
+
+#about .events {
+  position:relative;
+  z-index:1;
+  margin-top:150px;
+  height:900px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#about .num2-container {
+  position: relative; 
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:calc(100% - 710px);
+  padding:10px;
+  box-sizing: border-box;
+}
+
+/* special adjustment for "2" inside the cricle. */
+#about .num2-container .number {
+  top:2px;
+}
+
+/* ---------------------- */
+
+
+/* Members Section CSS */
+/* ------------------- */
+.members-list {
+  padding: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.member-card {
+  width:250px;
+  background-color: white;
+  padding:20px;
+  border-radius: 15px;
+  margin: 30px 20px;
+}
+
+.member-card .photo {
+  width:100%
+}
+
+.member-card .text {
+  text-align:center;
+  padding: 10px 0px;
+}
+
+.member-card .social-icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 35px;
+  padding-top: 5px;
+}
+/* ------------------- */
+
+/* Contact Section CSS */
+/* ------------------- */
+#contact {
+	background-image: url('../img/back.png');
+	background-size: 450px 450px;
+	background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*
+  Custom AOS animation 
+  info :: AOS doesn't work on SVG Elements 
+  -------------------------- */
+[data-aos="draw-circle-small"] > svg > circle {
+  stroke-dasharray: 76;
+  stroke-dashoffset: 76;
+  transition: 2s;
+}
+
+[data-aos="draw-circle-small"].aos-animate > svg > circle {
+  stroke-dasharray: 76;
+  stroke-dashoffset: 0px;
+}
+/* -------------------------- */
+
+[data-aos="draw-circle-large"] > svg > #large-circle {
+  stroke-dasharray: 162;
+	stroke-dashoffset: 162;
+  transition: 5s;
+}
+
+[data-aos="draw-circle-large"].aos-animate > svg > #large-circle {
+  stroke-dasharray: 162;
+	stroke-dashoffset: 0px;
+}
+
+[data-aos="draw-circle-large"] > svg > #small-circle {
+  stroke-dasharray: 127;
+	stroke-dashoffset: 127;
+  transition: 3s;
+}
+
+[data-aos="draw-circle-large"].aos-animate > svg > #small-circle {
+  stroke-dasharray:127;
+	stroke-dashoffset: 0px;
+}
+
+/* For Events Section */
+
+.slick-prev:before, .slick-next:before { 
+    color:rgb(20,20,20) !important;
+    font-size: 28px !important;
+}
+
+.event-box {
+  box-shadow: 3px rgb(20,20,20);
+  background: rgb(245,245,245);
+  padding: 50px;
+  box-sizing: border-box !important;
+  border: 1px solid lightgrey;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.events-nav-container {
+  margin: 0px 100px;
+}
+
+.event-nav {
+  background-color:rgb(20,20,20);
+  color:white;
+  margin:50px;
+  height:100px !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  font-weight: bold;
+  text-align: center;
+}
+/* --------------------- */
+.icon-box {
+  position: relative;
+  padding: 15px;
+  padding-left: 95px;
+  border: 1px solid lightgray;
+  border-radius: 15px;  
+  background: rgb(243,243,243);
+  -webkit-box-shadow: 4px 6px 18px -4px rgba(204,204,204,1);
+  -moz-box-shadow: 4px 6px 18px -4px rgba(204,204,204,1);
+  box-shadow: 4px 6px 18px -4px rgba(204,204,204,1);
+}
+
+.address > .icon-box{
+  margin: 45px;
+}
+
+.icon-box .icon {
+  background-color: white;
+  border-radius: 15px 0px 0px 15px;
+  padding: 0 20px;
+  font-size: 35px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+}
+
+.icon-button {
+  display: block;
+  cursor: pointer;
+  padding: 10px 25px;
+  background-color: rgb(20, 20, 20);
+  color: white;
+  border-radius: 20px;
+}
+
+/* width */
+.event-box div::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.event-box div::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+.event-box div::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+.event-box div::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
