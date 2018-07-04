@@ -1,38 +1,40 @@
-<html>
+f<html>
   <head>
-
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udaan Club</title>
   </head>
   <body>
     <div id="sidebar" >
       <div class="logo" style="height: 200px;">
-        <img class="udaan-pen" src="https://lh3.google.com/u/0/d/1D-gdwpJHMcddQXwm1DenD3pp_60KZGNs=w1920-h887-iv1">
+        <img class="udaan-pen" src="img/udaan_icon_white.png">
         <div class="udaan-text"></div>
       </div>
       <div style="display:flex;flex-direction: column;align-items:center;justify-content:center;height: calc(100% - 400px);">
       <ul class="menu">
-				<li><a href="#">Home<a></li>
-				<li><a href="#">About<a></li>
-				<li><a href="#">Events<a></li>
-				<li><a href="#">Memebers<a></li>
-				<li><a href="#">Contact<a></li>
+				<li  class="active"><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#events">Events</a></li>
+				<li><a href="#members">Memebers</a></li>
+				<li><a href="#contact">Contact</a></li>
       </ul>
       </div>
       <div class="sidebar-scrollDown" style="position:absolute;bottom:0;height: 100px;width:100%;text-align:center;">
-        <img src="scrollDown.svg" style="width:18px"><br>
+        <img src="img/scrollDown.svg" style="width:18px"><br>
         <br>
         Scroll Down
       </div>
     </div>
-		<section id="home" class="section">
-			<div id="banner" style="height:50%;display:flex;flex-direction: column;box-sizing:border-box; ">
-				<img src="udaan.svg" style="display:block;width: 40%;height:auto;margin:auto;
+		<section id="home" class="section" style="position:relaitve;">
+			<div id="banner" style="position:relative;z-index:1;height:50%;display:flex;flex-direction: column;box-sizing:border-box; ">
+				<img src="img/udaan.svg" style="display:block;width: 40%;height:auto;margin:auto;
 				-webkit-box-shadow: 17px 12px 49px -12px rgba(179,179,179,0.87);
 				-moz-box-shadow: 17px 12px 49px -12px rgba(179,179,179,0.87);
 				box-shadow: 17px 12px 49px -12px rgba(179,179,179,0.87);
-				border-radius: 15px;">
+				border-radius: 15px;margin-bottom: 50px;">
 			</div>
-			<div id="tagline" style="position:relative;height:50%;box-sizing:border-box; margin: auto; font-size:20px;width:80%;text-align:center;">	
-        <div style="display:inline-block;padding: 0.5em 1em; font-size:30px;color: rgb(20, 20, 20);background-color: rgba(180,180,180,0.2);border-radius: 15px;
+			<div id="tagline" style="position:relative;z-index:1;height:50%;box-sizing:border-box; margin: auto; font-size:20px;width:80%;text-align:center;">	
+        <div style="display:inline-block;padding: 0.5em 1em; font-size:30px;color: rgb(20, 20, 20);background-color: rgba(230,230,230,0.8);border-radius: 15px;
         height: 75px;box-sizing: border-box;" >
 				<i class="fas fa-quote-left"></i>&nbsp;&nbsp;&nbsp;&nbsp;
 					Fly high into the sky of self-confidence.&nbsp;&nbsp;&nbsp;&nbsp;
@@ -40,92 +42,198 @@
         </div>
         <div style="width:100%;display:flex;flex-direction: column;justify-content:center;align-items:center;position:absolute;bottom:0px;top:75px;">
           Scroll Down<br><br><i style="font-size:30px;" class="fas fa-arrow-down"></i></div>
-			<div>
+      </div>
+      <img src="img/art.png" style="display:block;position:absolute;height:100%;left:190px;top:30px;opacity: 0.6;">
+      <img src="img/science.png" style="display:block;position:absolute;height:100%;right:0;top:0px;opacity: 0.6;">
 		</section>
 		<section id="about" class="section">
 			<div class="hsmall">Let us tell you about</div>
-			<div class="hlarge">Udaan Club</div>
-			<div style="position:relative;width:65%;padding:120px 30px;margin:80px 0px 20px auto;font-size:20px;border: 1px solid black;border-radius:15px 0px 0px 15px;
-			background-image: url('oback.jpg');color:white;background-size: cover;">
+      <div class="hlarge">Udaan Club</div>
+      <div style="display:flex;flex-direction: row;">
+      <div style="display:flex;flex-direction:column;justify-content:center;align-items:center;width:35%;box-sizing: border-box;">
+        <div data-aos="draw-circle-small" style="position:relative;" >
+          <div style="font-size:40px;color:grey;display:flex;flex-direction:row;justify-content:center;align-items:center;position:absolute;top:0;width:100%;height:100%;left:0">
+              1
+          </div>
+          <svg viewBox="0 0 25 25" style="width:75px;height:75px;">
+            <circle cx="50%" cy="50%" r="48%" fill="transparent" stroke="lightgrey" stroke-width="0.5"></circle>
+          </svg>
+        </div>
+      </div>
+			<div style="position:relative;width:65%;padding:120px 30px;margin:80px 0px 20px auto;font-size:20px;border: 1px solid rgb(20,20,20);border-radius:15px 0px 0px 15px;
+			background-image: url('img/oback.jpg');color:white;background-size: cover;">
 				<span style="font-size:25px;font-weight:700;">The objective</span><br> of 'Udaan', the literary club of IIIT, Kalyani is to
 				inculcate literary skills in the students. 
 				The club endeavours to hone their creative talents and give a 
-				nurturing platform to them by organising regular sessions
+				nurturing platform to them by organising regular sessions.
 				These sessions comprise of interactive activities which develop 
 				their oratory and writing skills. 
-			</div>
-			<div class="events" style="position:relative;z-index:1;margin-top:150px;height:600px;display:flex;flex-direction: column;justify-content: center;">
+      </div>
+      </div>
+      <div style="display:flex;flex-direction:row;">
+			<div class="events" style="position:relative;z-index:1;margin-top:150px;height:900px;display:flex;flex-direction: column;justify-content: center;">
 				<div class="eventTags" style="display:flex;flex-direction: row;align-items:center;margin:15px;padding-left:350px;">
-					<div class="eventIcon" style="width:75px;height:75px;">
+					<div class="eventIcon" style="width:75px;height:75px;" data-aos="draw-circle-small">
 						<svg viewBox="0 0 25 25" style="width:75px;height:75px;">
 							<circle cx="50%" cy="50%" r="48%" fill="rgb(247,247,247)" stroke="lightgrey" stroke-width="0.5"></circle>
 						</svg>
-						<img src="speech.png" style="position:relative;top:-65px;left:12.5px;width:50px;height:50px;">
+						<img src="img/speech.png" style="position:relative;top:-65px;left:12.5px;width:50px;height:50px;">
 					</div>
 					<div style="padding-left:15px">Speeches</div>
 				</div>
 				<div class="eventTags" style="display:flex;flex-direction: row;align-items:center;margin:15px;padding-left:410px;">
-					<div class="eventIcon" style="width:75px;height:75px;">
+					<div class="eventIcon" style="width:75px;height:75px;" data-aos="draw-circle-small">
 						<svg viewBox="0 0 25 25" style="width:75px;height:75px;">
 							<circle cx="50%" cy="50%" r="48%" fill="rgb(248,248,248)" stroke="lightgrey" stroke-width="0.5"></circle>
 						</svg>
-						<img src="speech.png" style="position:relative;top:-65px;left:12.5px;width:50px;height:50px;">
+						<img src="img/speech.png" style="position:relative;top:-65px;left:12.5px;width:50px;height:50px;">
 					</div>
 					<div style="padding-left:15px">Debates</div>
 				</div>
 					<div class="eventTags" style="display:flex;flex-direction: row;align-items:center;margin:15px;padding-left:440px;">
-						<div class="eventIcon" style="width:75px;height:75px;">
+						<div class="eventIcon" style="width:75px;height:75px;" data-aos="draw-circle-small">
 							<svg viewBox="0 0 25 25" style="width:75px;height:75px;">
 								<circle cx="50%" cy="50%" r="48%" fill="rgb(249,249,249)" stroke="lightgrey" stroke-width="0.5"></circle>
 							</svg>
-							<img src="role-playing.png" style="position:relative;top:-62px;left:13px;width:50px;height:50px;">
+							<img src="img/role-playing.png" style="position:relative;top:-62px;left:13px;width:50px;height:50px;">
 						</div>
 						<div style="padding-left:15px">Roleplays</div>
 					</div>
 				<div class="eventTags" style="display:flex;flex-direction: row;align-items:center;margin:15px;padding-left:440px;">
-					<div class="eventIcon" style="width:75px;height:75px;">
+					<div class="eventIcon" style="width:75px;height:75px;" data-aos="draw-circle-small">
 						<svg viewBox="0 0 25 25" style="width:75px;height:75px;">
 							<circle cx="50%" cy="50%" r="48%" fill="rgb(250,250,250)" stroke="lightgrey" stroke-width="0.5"></circle>
 						</svg>
-						<img src="group-discussion.png" style="position:relative;top:-60px;left:15px;width:45px;height:45px;">
+						<img src="img/group-discussion.png" style="position:relative;top:-60px;left:15px;width:45px;height:45px;">
 					</div>
 					<div style="padding-left:15px">Group Discussions</div>
 				</div>
 				<div class="eventTags" style="display:flex;flex-direction: row;align-items:center;margin:15px;padding-left:410px;">
-					<div class="eventIcon" style="width:75px;height:75px;">
+					<div class="eventIcon" style="width:75px;height:75px;" data-aos="draw-circle-small">
 						<svg viewBox="0 0 25 25" style="width:75px;height:75px;">
 							<circle cx="50%" cy="50%" r="48%" fill="rgb(250,250,250)" stroke="lightgrey" stroke-width="0.5"></circle>
 						</svg>
-						<img src="interview.png" style="position:relative;top:-65px;left:12.5px;width:50px;height:50px;">
+						<img src="img/interview.png" style="position:relative;top:-65px;left:12.5px;width:50px;height:50px;">
 					</div>
 					<div style="padding-left:15px">Stress Interviews</div>
 				</div>
 					<div class="eventTags" style="display:flex;flex-direction: row;align-items:center;margin:15px;padding-left:350px;">
-						<div class="eventIcon" style="width:75px;height:75px;">
+						<div class="eventIcon" style="width:75px;height:75px;" data-aos="draw-circle-small">
 							<svg viewBox="0 0 25 25" style="width:75px;height:75px;">
 								<circle cx="50%" cy="50%" r="48%" fill="rgb(250,250,250)" stroke="lightgrey" stroke-width="0.5"></circle>
 							</svg>
-							<img src="presentation.png" style="position:relative;top:-60px;left:15px;width:45px;height:45px;">
+							<img src="img/presentation.png" style="position:relative;top:-60px;left:15px;width:45px;height:45px;">
 						</div>
 						<div style="padding-left:15px">Presentations</div>
-					</div>
-			</div>
-			<div style="position:relative;height:900px;top:-750px;" >
-				<svg viewBox="0 0 75 100" style="position:absolute;left:0;top:0;width:auto;height:100%;">
+        </div>
+      <div style="display:inline-block;position:absolute;left:0;top:0;height:900px;z-index:-1;" data-aos="draw-circle-large">
+			  <svg viewBox="0 0 75 100" style="width:auto;height:900px;">
 						<style type="text/css">
 							.st0{fill:none;stroke:lightgrey;stroke-width:0.2;stroke-miterlimit:10;}
 						</style>
-						<path id="XMLID_2_" class="st0 svgCircle" d="M-0.1,2.5c30.2,0,54.7,21.2,54.7,47.3S30.1,97.1-0.1,97.1"/>
-						<path id="XMLID_1_" class="st0" d="M-0.1,12.5c23.7,0,42.9,16.6,42.9,37.1S23.5,86.6-0.1,86.6"/>
-       </svg>
+						<path id="large-circle" class="st0" d="M-0.1,2.5c30.2,0,54.7,21.2,54.7,47.3S30.1,97.1-0.1,97.1"/>
+						<path id="small-circle" class="st0" d="M-0.1,12.5c23.7,0,42.9,16.6,42.9,37.1S23.5,86.6-0.1,86.6"/>
+        </svg>
       </div>
-      <div>asdas</div>
+      </div>
+      <div style="position: relative; display:flex;flex-direction:column;justify-content:center;align-items:center;width:calc(100% - 710px);padding:10px;box-sizing: border-box;">
+        <div class="hsmall">
+          <div data-aos="draw-circle-small" style="position:relative;" >
+            <div style="font-size:40px;color:grey;display:flex;flex-direction:row;justify-content:center;align-items:center;position:absolute;top:2px;width:100%;height:100%;left:0">
+              2
+            </div>
+            <svg viewBox="0 0 25 25" style="width:75px;height:75px;">
+              <circle cx="50%" cy="50%" r="48%" fill="transparent" stroke="lightgrey" stroke-width="0.5"></circle>
+            </svg>
+          </div>
+          <br>
+          What are the events<br> undertaken by Udaan?</div>
+      </div>
+    </div>
 		</section>
 		<section id="events" class="section">
         <div class="hlarge">Events</div>
-        <div class="member-container" style="display:flex;flex-direction: row;">
+        <div class="events-box-container" style="height:calc(90% - 200px);margin:50px 100px 0 100px;">
+          <div class="event-box">
+            <img src="img/Gupshup.jpg" style="margin-right:30px;display:block;float:left;height: 100%;">
+            <div style="font-size:18px;">
+            <b style="font-size:22px;">Gupshup</b><br>
+            Date : 20th March, 2018<br><br>
+            A fun casual event was organized by Udaan with an aim to remove stage 
+            fright and introduce the students of IIIT Kalyani to the 
+            art of public speaking. Students came on the stage and discussed 
+            their love for literature. Interest shown by the audience in topics 
+            ranging from intricacies of a woman to social issues and 
+            from anime to Robert Frost's deep works was commendable.
+            </div>
+          </div>
+          <div class="event-box">
+            <img src="img/Gupshup.jpg" style="margin-right:30px;display:block;float:left;height: 100%;">
+            <div style="font-size:18px;height:100%;overflow-y:auto;">
+            <b style="font-size:22px;">Ek Bharat Shreshtha Bharat</b><br>
+            Date : 21st March, 2018<br><br>
+            The March edition of the Ek Bharat Shreshtha Bharat event took the 
+            audience on a ride through the rich heritage of Rajasthan and the 
+            scenic beauty of Assam. Following two programs were organized by 
+            Udaan to celebrate these two beautiful states of India and at the
+            same time to hone the literray skills of the students of IIIT Kalyani.
+            <br><br>
+            1. Group Discussion : Participants expressed their opinion on the 
+            Padmavat issue and the reaction of the native Rajasthanis on the same. 
+            In the process participants got an opportunity to work and 
+            improve on their communication skills and imbibe 
+            in themselves leadership ability. At the same time the 
+            audience learned a lot about the entire controversy surrounding
+            Padmaavat.
+            <br><br>
+            2. WordMania : The heat generated due to the intense group discussion 
+            on the Padmaavat issue was cooled down by this fun 
+            game of words. In this open to all event words 
+            pertaining to the culture of Assam were given out 
+            to the audience and people were supposed to make as 
+            many words as they could from the word that was 
+            given to them. It was enjoyed by students and 
+            faculty members alike.
+            </div>
+          </div>
+          <div class="event-box">
+            <img src="img/Gupshup.jpg" style="margin-right:30px;display:block;float:left;height: 100%;">
+            <div style="font-size:18px;height:100%;overflow-y:auto;">
+            <b style="font-size:22px;">Le Tour De India</b><br>
+            Date : 11th February, 2018<br><br>
+            Le Tour De India was an engrossing and entertaining quiz competition 
+            organized by Udaan under the February edition of Ek Bharat 
+            Shreshtha Bharat. It took the students of IIIT Kalyani on an 
+            enlightening voyage through India covering on topics such 
+            as culture, governance, wildlife, tourism and industries.
+            </div>
+          </div>
+          <div class="event-box">
+            <img src="img/Gupshup.jpg" style="margin-right:30px;display:block;float:left;height: 100%;">
+            <div style="font-size:18px;height:100%;overflow-y:auto;">
+            <b style="font-size:22px;">IIITK-MUN</b><br>
+            Date : 31st May,2018<br><br>
+            Udaan and Semblance (The Dramatics Club) organised the first ever 
+            IIIT-K MUN on the topic "The Situation in the South-East due to the 
+            Israel-Palestine Conflict." The conference provided the students 
+            of IIIT Kalyani a platform to step into the shoes of a diplomat, 
+            meaningfully engage with the contemporary word issues, 
+            polish their public speaking and communication skills and 
+            at the same time provided them an opportunity to 
+            become more confident and articulate global citizens.
+            </div>            
+          </div>
+
+        </div>
+        <div class="events-nav-container">
+            <div class="event-nav">Gupshup</div>
+            <div class="event-nav">Ek Bharat Shreshtha Bharat</div>
+            <div class="event-nav">IIITK-MUN</div>
+            <div class="event-nav">Le Tour De India</div>
+        </div>
+    <!--    <div class="member-container" style="display:flex;flex-direction: row;">
         <div class="member-about" style="height:100%;box-sizing: border-box;padding:50px 20px 50px 50px;width:calc(100% - 300px);min-height: 400px;display:flex;flex-direction: column;justify-content:left;">
-          <div class="about-card" style="height:100%;color:rgb(20,20,20);width:100%;background-color: white;box-sizing: border-box;padding:25px;">
+          <div class="about-card" style="height:100%;color:rgb(20,20,20);width:100%;background-color: white;box-sizing: border-box;padding:25px;border: 1px solid grey;">
             <img src="member.jpg" style="margin-right: 25px;max-height:250px;height: 100%;float:left;//border-radius: 15px;">
             <div style="margin-left:50px;"><b>Anubhav Dinesh Patel</b><br>President, Udaan<br><br>
             Here is a paragraph that describes me. *Blah Blah*. Loves reading and writing. *Blah Blah*.</div>
@@ -185,13 +293,13 @@
                   </div>
               </div>
             </div>
-        </div>
+        </div>-->
 		</section>
 		<section id="members" class="section">
       <div class="hlarge">Members</div>
       <div class="members-list" style="padding:60px;display:flex; flex-direction: row;flex-wrap: wrap;justify-content: space-around;">
-        <div class="member-card" style="width:250px;background-color: white;padding:20px;border-radius: 15px;margin: 30px auto;">
-          <img src="member.jpg" style="width:100%">
+        <div class="member-card" data-aos="fade-down" data-aos-duration="2000" style="width:250px;background-color: white;padding:20px;border-radius: 15px;margin: 30px auto;">
+          <img src="img/member.jpg" style="width:100%">
           <div style="text-align:center;padding: 10px 0;">
             <b>Anubhav Dinesh Patel</b><br>
             President, Udaan
@@ -201,8 +309,8 @@
               <i class="fas fa-envelope"></i><i class="fab fa-instagram"></i>
           </div>
         </div>
-         <div class="member-card" style="width:250px;background-color: white;padding:20px;border-radius: 15px;margin: 30px auto;">
-          <img src="member.jpg" style="width:100%">
+         <div class="member-card" data-aos="fade-down" data-aos-duration="2000"  style="width:250px;background-color: white;padding:20px;border-radius: 15px;margin: 30px auto;">
+          <img src="img/member.jpg" style="width:100%">
           <div style="text-align:center;padding: 10px 0;">
             <b>Anubhav Dinesh Patel</b><br>
             President, Udaan
@@ -212,8 +320,8 @@
               <i class="fas fa-envelope"></i><i class="fab fa-instagram"></i>
           </div>
         </div>
-         <div class="member-card" style="width:250px;background-color: white;padding:20px;border-radius: 15px;margin: 30px auto;">
-          <img src="member.jpg" style="width:100%">
+         <div class="member-card" data-aos="fade-down" data-aos-duration="2000"  style="width:250px;background-color: white;padding:20px;border-radius: 15px;margin: 30px auto;">
+          <img src="img/member.jpg" style="width:100%">
           <div style="text-align:center;padding: 10px 0;">
             <b>Anubhav Dinesh Patel</b><br>
             President, Udaan
@@ -223,8 +331,8 @@
               <i class="fas fa-envelope"></i><i class="fab fa-instagram"></i>
           </div>
         </div>
-        <div class="member-card" style="width:250px;background-color: white;padding:20px;border-radius: 15px;margin: 30px auto;">
-            <img src="member.jpg" style="width:100%">
+        <div class="member-card" data-aos="fade-down" data-aos-duration="2000"  style="width:250px;background-color: white;padding:20px;border-radius: 15px;margin: 30px auto;">
+            <img src="img/member.jpg" style="width:100%">
             <div style="text-align:center;padding: 10px 0;">
               <b>Anubhav Dinesh Patel</b><br>
               President, Udaan
@@ -234,8 +342,8 @@
                 <i class="fas fa-envelope"></i><i class="fab fa-instagram"></i>
             </div>
           </div>
-           <div class="member-card" style="width:250px;background-color: white;padding:20px;border-radius: 15px;margin: 30px auto;">
-            <img src="member.jpg" style="width:100%">
+           <div class="member-card" data-aos="fade-down" data-aos-duration="2000"  style="width:250px;background-color: white;padding:20px;border-radius: 15px;margin: 30px auto;">
+            <img src="img/member.jpg" style="width:100%">
             <div style="text-align:center;padding: 10px 0;">
               <b>Anubhav Dinesh Patel</b><br>
               President, Udaan
@@ -245,8 +353,8 @@
                 <i class="fas fa-envelope"></i><i class="fab fa-instagram"></i>
             </div>
           </div>
-           <div class="member-card" style="width:250px;background-color: white;padding:20px;border-radius: 15px;margin: 30px auto;">
-            <img src="member.jpg" style="width:100%">
+           <div class="member-card" data-aos="fade-down" data-aos-duration="2000"  style="width:250px;background-color: white;padding:20px;border-radius: 15px;margin: 30px auto;">
+            <img src="img/member.jpg" style="width:100%">
             <div style="text-align:center;padding: 10px 0;">
               <b>Anubhav Dinesh Patel</b><br>
               President, Udaan
@@ -261,15 +369,24 @@
 		</section>
 		<section id="contact" class="section">
       <div class="hlarge">Contact Us</div>
-      <div class="h-2-col" style="padding: 70px 30px 50px 60px;display:flex;flex-direction:row;justify-content:space-between;align-items:center">
-        <div class="address" style="width:50%;text-align: left;">
-          Indian Institute of Information Technology Kalyani, Webel IT Park,<br>
-          (Near Buddha Park), Kalyani - 741235. Nadia, West Bengal. <br>
-          <br>
-          <b>Email</b> : udaan@iiitkalyani.ac.in <br>
-          <b>Phone</b> : +91 9999988344 <br>
+      <div class="h-2-col" style="margin:auto;padding: 70px 30px;max-width:1200px;display:flex;flex-direction:row;justify-content:space-between;align-items:center">
+        <div class="address" style="width:50%;text-align: left;color:rgb(20,20,20);">
+          <div class="icon-box">
+            <div class="icon">
+              <i class="fas fa-map-marked"></i>
+            </div>
+            <b>Indian Institute of Information Technology Kalyani</b><br>Webel IT Park,  
+            (Near Buddha Park), <br>Kalyani - 741235. Nadia, West Bengal.
+          </div>
+          <div class="icon-box">
+            <div class="icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <b>+91 9999988344<br>
+              udaan@iiitkalyani.ac.in</b>
+          </div>
         </div>
-        <div class="map" style="margin: auto;
+        <div class="map" style="margin: 0;
         background-color: white;
         border-radius: 10px;
         padding: 15px;
@@ -283,6 +400,34 @@
           !4v1529308823885" width="400" height="300" frameborder="0" style="border:1px solid rgb(230,230,230)" allowfullscreen></iframe>
         </div>
       </div>
+      <div style="display: flex;flex-direction: row;justify-content:space-around;align-items: center;max-width: 1200px;margin:100px auto;">
+        <div class="icon-button" style="background:	#3b5998;">
+            <i class="fab fa-facebook" style="font-size:25px;vertical-align:text-bottom;"></i>
+            &nbsp;&nbsp;
+            Facebook
+        </div>
+        <div class="icon-button" style="background: rgb(29, 161, 242)">
+            <i class="fab fa-twitter" style="font-size:23px;vertical-align:text-bottom;"></i>
+            &nbsp;&nbsp;
+            Twitter
+        </div>
+        <div class="icon-button" style="background: rgb(76, 76, 76)">
+            <i class="fab fa-instagram" style="font-size:25px;vertical-align:text-bottom;"></i>
+            &nbsp;&nbsp;
+            Instagram
+        </div>
+        <div class="icon-button" style="background:	rgb(219, 68, 55)">
+            <i class="fab fa-google-plus-g" style="font-size:25px;vertical-align:text-bottom;"></i>
+            &nbsp;&nbsp;
+            Goolge+
+        </div>
+        <div class="icon-button" style="background:	rgb(189, 8, 28)">
+            <i class="fab fa-pinterest" style="font-size:25px;vertical-align:text-bottom;"></i>
+            &nbsp;&nbsp;
+            Pinterest
+        </div>             
+      </div>
+      </div>
 		</section>
     <style>
 
@@ -292,7 +437,7 @@ html {
   padding: 0;
   background-color: rgb(240, 240, 240);
   background-color: rgba(200,200,200,0.5);
-	background-image : url('back.png');
+	background-image : url('img/back.png');
 	background-repeat: repeat;
 	background-size: 550px 550px;
 	background: linear-gradient(0deg,#ebedee  0%, #fdfbfb 50%, #ebedee 100%);
@@ -326,13 +471,13 @@ html {
 }
 
 #home {
-	background-image: url('back.png');
+	background-image: url('img/back.png');
 	background-size: 450px 450px;
 	background-repeat: repeat;
 }
 
 #contact {
-	background-image: url('back.png');
+	background-image: url('img/back.png');
 	background-size: 450px 450px;
 	background-repeat: repeat;
 }
@@ -366,6 +511,7 @@ a {
 }
 
 #sidebar {
+  user-select: none;
   position: fixed;
   top: 0;
   height: 100%;
@@ -401,6 +547,8 @@ a {
 	flex-direction: row;
 	align-items: center;
 	padding: 20px 33px;
+  color: rgb(100, 100, 100);
+  transition: 0.2s ease-out;
 }
 
 .menu li:first-of-type {
@@ -423,11 +571,142 @@ a {
 	background-color: rgb(20, 20, 20);
 	border-radius: 50%;
 	margin-right: 10px;
+  transition: 0.2s ease-out;
+}
+.menu li.active::before{
+  border: 3px solid white;
+}
+.menu li::after{
+  content: '';
+  position: absolute;
+  display:block;
+  background-color: #2980b9;
+  border-radius: 5px;
+  width: 20px;
+  height: 7px;
+  right: -20px;
+  transition: 0.2s ease-out;
+  opacity: 0;
+}
+.menu li.active::after{
+  opacity: 1;
 }
 .menu li a{
 	display: block;
 	line-height: 16px;
 }
+.menu li.active {
+  color: white;
+}
+
+/*
+  Custom AOS animation 
+  info :: AOS doesn't work on SVG Elements 
+  -------------------------- */
+[data-aos="draw-circle-small"] > svg > circle {
+  stroke-dasharray: 76;
+  stroke-dashoffset: 76;
+  transition: 2s;
+}
+
+[data-aos="draw-circle-small"].aos-animate > svg > circle {
+  stroke-dasharray: 76;
+  stroke-dashoffset: 0;
+}
+/* -------------------------- */
+
+[data-aos="draw-circle-large"] > svg > #large-circle {
+  stroke-dasharray: 162;
+	stroke-dashoffset: 162;
+  transition: 5s;
+}
+
+[data-aos="draw-circle-large"].aos-animate > svg > #large-circle {
+  stroke-dasharray: 162;
+	stroke-dashoffset: 0;
+}
+
+[data-aos="draw-circle-large"] > svg > #small-circle {
+  stroke-dasharray: 127;
+	stroke-dashoffset: 127;
+  transition: 3s;
+}
+
+[data-aos="draw-circle-large"].aos-animate > svg > #small-circle {
+  stroke-dasharray:127;
+	stroke-dashoffset: 0;
+}
+
+/* For Events Section */
+
+.slick-prev:before, .slick-next:before { 
+    color:rgb(20,20,20) !important;
+    font-size: 28px !important;
+}
+
+.event-box {
+  box-shadow: 3px rgb(20,20,20);
+  background: rgb(245,245,245);
+  padding: 50px;
+  box-sizing: border-box;
+  border: 1px solid lightgrey;
+}
+
+.events-nav-container {
+  margin: 0 100px;
+}
+
+.event-nav {
+  background-color:rgb(20,20,20);
+  color:white;
+  margin:50px;
+  height:100px !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  font-weight: bold;
+}
+/* --------------------- */
+.icon-box {
+  position: relative;
+  padding: 15px;
+  padding-left: 95px;
+  border: 1px solid lightgray;
+  border-radius: 15px;  
+  background: rgb(243,243,243);
+  -webkit-box-shadow: 4px 6px 18px -4px rgba(204,204,204,1);
+  -moz-box-shadow: 4px 6px 18px -4px rgba(204,204,204,1);
+  box-shadow: 4px 6px 18px -4px rgba(204,204,204,1);
+}
+
+.address > .icon-box{
+  margin: 45px;
+}
+
+.icon-box .icon {
+  background-color: white;
+  border-radius: 15px 0 0 15px;
+  padding: 0 20px;
+  font-size: 35px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1;
+  left: 1;
+  bottom: 1;
+}
+
+.icon-button {
+  display: block;
+  cursor: pointer;
+  padding: 10px 25px;
+  background-color: rgb(20, 20, 20);
+  color: white;
+  border-radius: 20px;
+}
+/*
 @keyframes drawCircle {
 	0% {
 		stroke-dasharray: 162;
@@ -444,12 +723,61 @@ a {
 	animation-direction:normal;
 	animation-timing-function: linear;
 }
-
+*/
     </style>
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">    
 		<link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
-		<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
-		integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-		<link href="https://fonts.googleapis.com/css?family=Istok+Web:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+     integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">    <link href="https://fonts.googleapis.com/css?family=Istok+Web:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.2/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.2/aos.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script type="text/javascript" src="slick/slick.min.js"></script>	
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var scrollMenu = document.querySelectorAll('ul.menu li');
+        var scrollItems = [];
+        for (var i=0; i<scrollMenu.length; i++) {
+          scrollItems.push(document.querySelector(scrollMenu[i].firstChild.getAttribute('href')));
+        } 
+        window.addEventListener('scroll',function () {
+          for (var i=0; i<scrollItems.length; i++) {
+            scrollMenu[i].classList.remove('active');
+          }
+          var pageOffset = window.pageYOffset + 0.5 * window.innerHeight;
+          for (var i=0; i<scrollItems.length; i++) {
+            if (pageOffset >= scrollItems[i].offsetTop &&
+            pageOffset <= scrollItems[i].offsetTop + scrollItems[i].offsetHeight) {
+              scrollMenu[i].classList.add('active');
+              break;
+            }
+          }
+        });
+      });
+
+      /* For slick.js Carousel */
+      $(document).ready(function(){
+        $('.events-box-container').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: true,
+          asNavFor: '.events-nav-container'
+        });
+        $('.events-nav-container').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          asNavFor: '.events-box-container',
+          dots: true,
+          centerMode: true,
+          focusOnSelect: true
+        });
+      });
+      
+      AOS.init();
+    </script>
   </body>
 </html>
